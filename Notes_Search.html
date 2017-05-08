@@ -4,12 +4,12 @@
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="selenium.base" href="https://pikasoftware.com/" />
-<title>Time_Keeping_Report</title>
+<title>Notes_Search</title>
 </head>
 <body>
 <table cellpadding="1" cellspacing="1" border="1">
 <thead>
-<tr><td rowspan="1" colspan="3">Time_Keeping_Report</td></tr>
+<tr><td rowspan="1" colspan="3">Notes_Search</td></tr>
 </thead><tbody>
 <tr>
 	<td>open</td>
@@ -18,63 +18,28 @@
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>//a[contains(text(),'Reports')]</td>
+	<td>css=#ql &gt; a</td>
 	<td></td>
 </tr>
 <tr>
 	<td>clickAndWait</td>
-	<td>link=Time Keeping Report</td>
+	<td>link=Notes Search</td>
 	<td></td>
 </tr>
 <tr>
-	<td>click</td>
-	<td>css=button.btn</td>
+	<td>type</td>
+	<td>css=p &gt; input[name=&quot;s&quot;]</td>
+	<td>53L3NI|_|M</td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=p &gt; input[type=&quot;submit&quot;]</td>
 	<td></td>
 </tr>
 <tr>
-	<td>pause</td>
-	<td>250</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=&lt;&lt;</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>250</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=&lt;&lt;</td>
-	<td></td>
-</tr>
-<tr>
-	<td>pause</td>
-	<td>250</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=&lt;&lt;</td>
-	<td></td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>link=1</td>
-	<td></td>
-</tr>
-<tr>
-	<td>select</td>
-	<td>id=user_id</td>
-	<td>label=Attorney, Jane</td>
-</tr>
-<tr>
-	<td>click</td>
-	<td>name=gen</td>
-	<td></td>
+	<td>verifyText</td>
+	<td>//div[@id='page_content']/table[2]/tbody/tr[2]/td[4]</td>
+	<td>*Testing Selenium Script*</td>
 </tr>
 </tbody></table>
 </body>
